@@ -1,0 +1,87 @@
+/* SELECTORES */
+
+/* 
+Selectores simples
+    Selectores elementales
+        Selector universal -> *
+        Selector de tipo o etiqueta -> Nombre de la etiqueta
+    Selectores de atributo
+        id -> id del elemento
+        clase -> clase del elemento
+        otros atributos
+           [atributo] -> [href]
+
+           Si el valor que se coloca coincide con el valor del atributo
+           [atributo=valor]
+
+           Lo que hacemos es comprobar si el atributo empieza por ese valor
+           [atributo^=valor]
+
+           Se selecciona el valor que coincida independientemente de donde este
+           [atributo*=valor]
+
+           Podemos seleccionar el valor si termina por esa palabra
+           [atributo$=valor]
+
+           Si se necesita seleccionar un atributo con la palabra o con la palabra y un guion 
+           [atributo|=valor]
+           
+Selectores compuestos
+    Selectores agrupados
+    Selectores combinadores
+    Pseudoclases - Pseudoelementos
+*/
+
+/* *{
+    background-color: lightcoral;
+} */
+
+#tittle{
+    background-color: lightgreen;
+}
+
+.paragraph{
+    background-color: lightgray;
+}
+
+.li{
+    background-color: lightsalmon;
+}
+
+[href]{
+    background-color: aqua;
+}
+
+[href="https://google.com"]{
+    background-color: brown;
+}
+
+[href^=color]{
+    background-color: darkblue;
+}
+
+[href*="modo"]{
+    background-color: green;
+}
+
+[href$="rojo"]{
+    background-color:darkorange;
+}
+
+[lang|="en-GB"]{
+    background-color: magenta;
+}
+/* h1{
+    background-color: lightcyan;
+}
+
+
+p{
+    background-color: lightgreen;
+}
+ul{
+    background-color: rebeccapurple;
+}
+li{
+    background-color: blue;
+} */

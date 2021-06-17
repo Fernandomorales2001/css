@@ -1,0 +1,92 @@
+/* 
+Selectores compuestos
+    Selectores agrupados -> se agrupan los selectores separados por comas y se escribe el estilo una vez
+    Selectores combinadores
+       Selector descendente
+       Selector de hermano siguiente +
+       Selector de hermanos siguientes ~
+    Pseudoclases - Pseudoelementos
+*/
+
+/* .text, 
+.text-2,
+.text-3,
+.text-4{
+    background-color: steelblue;
+} */
+
+/* 
+ Selector descendiente
+
+ No es recomendable
+html body div .tittle-2{
+    background-color: teal;
+} 
+
+recomendable
+div .tittle-2{
+    background-color: teal;
+}  */
+
+/* 
+Selector de hermano siguiente
+.text-2 + .tittle-2{
+    background-color: tomato;
+} */
+
+/* 
+Selector de hermanos siguientes
+.text-2 ~ p{
+    background-color: teal;
+}  
+
+.text-2 ~ .text{
+    background-color: teal;
+} 
+
+.text-2 ~ .text + span{
+    background-color: violet;
+} 
+
+.text-2 ~ p span{
+    background-color: violet;
+} 
+*/
+
+/* 
+Selector de hijo directo
+.container > p{
+    background-color: yellow;
+}
+
+.container > p{
+    background-color: yellow;
+} */
+
+/* .text-2 ~ .text{
+    background-color: violet;
+} */
+
+/* .text-2 ~ .text + span{
+    background-color: violet;
+} */
+
+
+/* .text-2 ~ p span{
+    background-color: violet;
+} */
+
+/* .text-2 ~ p + span{
+    background-color: crimson;
+} */
+/* .text-2{
+    background-color: steelblue;
+}
+
+.text-3{
+    background-color: steelblue;
+}
+
+.text-4{
+    background-color: steelblue;
+} */
