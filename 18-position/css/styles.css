@@ -46,6 +46,8 @@ body{
     background-color: #333;
 }
 
+/* Position Relative */
+
 .box{
     width: 100px;
     height: 100px;
@@ -70,4 +72,46 @@ body{
     background-color: lightgreen;
     position: relative;
     /* top: 100px; */
+}
+
+/* Position Absolute */
+
+.box{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.container{
+    width: 300px;
+    height: 300px;
+    background-color:lightskyblue;
+    position: absolute;
+    margin-left: 100px;
+}
+
+.box-1{
+    background-color: lightcoral;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.link{
+    background-color: lime;
+    display: block;
+    position: absolute;
+    width: 200px;
+    top: 50px;
+}
+
+.box-2{
+    background-color: lightgreen;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    /* Se colora en la esquina del html porque no tiene un elemento sobre el que posicionarse
+    */
+    /* right: 0;
+    bottom: 0; */
 }
