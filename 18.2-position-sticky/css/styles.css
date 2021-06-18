@@ -20,13 +20,34 @@ body{
     padding: 25px 0;
     background-color: lightskyblue;
     color: orangered;
-    position: fixed;
+    /* position: sticky;
+    top: 0; */
+    height: 200px;
+    overflow: visible;
+}
+
+.menu{
+    position: sticky;
     top: 0;
-    width: 100%;
+}
+
+article{
+    outline: 3px solid red;
+}
+
+.article-tittle{
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    margin: 0;
 }
 
 .link{
     position: fixed;
     background-color: lightcoral;
     width: 200px;
+}
+
+.img-container{
+    text-align: center;
 }
