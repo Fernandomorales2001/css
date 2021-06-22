@@ -1,0 +1,16 @@
+Son selectores que reaccionan en tiempo real detectando la interaccion del usuario con algunos elementos
+
+Funcionan con todos los selectores de css
+
+No estan atados a ningun elemento
+
+Su sintaxis es:
+
+selector:pseudoclase{
+    estilos
+}
+
+:pseudoclase{
+    estilos
+}
+

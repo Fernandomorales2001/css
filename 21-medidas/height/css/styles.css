@@ -1,0 +1,38 @@
+/* 
+    HEIGHT
+        % -> Cuando estamos dentro de un contenedor, este tiene un alto declarado, si no no podra calcular el porcentaje. Si se le aplica una medida con porcentaje se sustituira automaticamente por auto.
+
+        auto -> Cuando utilizamos auto el alto lo calculara el navegador en base al contenido del elemento
+
+    NOTA: Height es una propiedad que tenes que usar con mucho cuidado. Si no es necesario esteblecer un alto, deja que el contenido decida el alto del elemento.
+*/
+
+body{
+    background-color: #333;
+    color: lightcoral;
+    margin: 0;
+    /* height: 500px; */
+}
+
+.header{
+    background-color: lightskyblue;
+    text-align: center;
+}
+
+.box{
+    width: 300px;
+    /* height: 20rem; */
+    height: 300px;
+    /* height: auto; */
+    /* padding-bottom: 20px; */
+    background-color: lightgreen;
+}
+
+.box-children{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: lightseagreen;
+}
+

@@ -1,0 +1,24 @@
+:root{
+    --color:red;
+    --border: 3px solid red;
+}
+
+.parragraph{
+    color: var(--color);
+}
+
+/* Redefinir la variable */
+.article{
+    --color: green;
+}
+
+.check:checked + .box{
+    --color: purple;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: var(--color);
+    border: var(--border);
+}

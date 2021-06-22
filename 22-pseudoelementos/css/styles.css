@@ -1,0 +1,51 @@
+/* 
+    La sintaxis para dar estilos a partes especificas de un elemento.
+    La sintaxis es selector::pseudo-element{ estilos }
+
+    Existen 5 Pseudoelementos
+        ::first-letter (Elementos de bloque)
+        ::first-line (Elementos de bloque)
+        ::selection
+        ::before
+        ::after
+            La propiedad content es obligatoria
+            Son elementos de linea por defecto
+            Son hijos del elemento al que pertenecen
+*/
+
+.tittle::first-letter{
+    color: red;
+    font-size: 2em;
+}
+
+.text::first-line{
+    font-size: 2em;
+    color: blue;
+}
+
+.inline::first-line{
+    color: red;
+    font-size: 2em;
+}
+
+.text::selection{
+    color: lime;
+    background-color: red;
+}
+
+.dolar::before,
+.dolar::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
+
+/* .dolar::before{
+    content: '$';
+}
+
+.dolar::after{
+    content: '.00';
+} */

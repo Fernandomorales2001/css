@@ -1,0 +1,74 @@
+/* 
+    Las medidas en CSS se pueden agrupar en 2 grupos, absolutas y relativas.
+
+    Las medidas absolutas NO CAMBIAN y siempre mantendran su tamaño independientemente del dispositivo o la interaccion del usuario.
+    Las mas usada es px (pixeles) cuya medida es 1/96 de lin, pero existen otras como: 
+        cm(centimetros) -> 1cm = 96px/2,54
+        mm(milimetros) -> 1mm = 1/10 de 1cm
+        Q(cuarto de milimetro) -> 1Q = 1/40 de 1cm
+        in(inches, pulgadas) -> lin = 2,54 cm = 96px
+        pc(picas) -> 1pc = 1/16 de lin
+        pt(puntos) -> 1pt = 1/72 de lin
+
+    Las medidas relativas SIEMPRE dependen de un contexto son las que se recomienda utilizar en la gran mayoria de ocasiones porque nos van a permitir que todos los elementos escalen proporcionalmente.
+    Las mas usada son em, rem, %, vw, vh, vmin y vmax aunque tenemos otras como: 
+        ex -> Altura de x de la fuente del elemento.
+        ch -> La medida del ancho del glifo "0" de la letra del elemento.
+        Lh -> Altura de la linea del elemento.
+
+    rem -> Corresponde a la medida de la "m" de la raiz del documento (html)
+
+    ejemplo: 16px = 1rem
+
+    em -> Corresponde a la medida de la "m" del contexto donde nos encontremos.
+
+    El estandar del tamaño de fuente por defecto en la raiz del documento es 16px, y NO ES RECOMENDABLE MODIFICARLO.
+
+    NOTA: Tanto "em" como "rem" se calcula en base a la propiedad font-size (tamaño de fuente)
+
+    % -> Cuando usamos porcentaje usamos de referencia el tamaño del contenedor y el navegador calcula ese procentaje. Esto no ocurre cuando usamos transform.
+
+    auto -> Cuando usamos auto le pedimos al navegador que calcule en funcion del espacio disponible.
+
+    HEIGHT
+        % -> Cuando estamos dentro de un contenedor, este tiene un alto declarado, si no no podra calcular el porcentaje. Si se le aplica una medida con porcentaje se sustituira automaticamente por auto.
+
+        auto -> Cuando utilizamos auto el alto lo calculara el navegador en base al contenido del elemento
+
+    NOTA: Height es una propiedad que tenes que usar con mucho cuidado. Si no es necesario esteblecer un alto, deja que el contenido decida el alto del elemento.
+*/
+
+body{
+    background-color: #333;
+    color: lightcoral;
+    /* font-size: 10px; */
+    margin: 0;
+}
+
+.box{
+    /* width: 100%; */
+    width: auto;
+    margin: 0 50px;
+    height: 200px;
+    background-color: lightgreen;
+}
+
+.box-children{
+    width: auto;
+    height: 25%;
+    margin-left: 100px;
+    background-color: lightseagreen;
+}
+
+/* .tittle{
+    font-size: 2rem;
+    font-size: 2em;
+} */
+
+/* .link{
+    background-color: lightcoral;
+    color: #333;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    font-size: 2rem;
+} */
