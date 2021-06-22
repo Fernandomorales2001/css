@@ -1,7 +1,5 @@
 /* 
-      Fixed -> El elemento perdera sus medidas y su espacio reservado.
-      Si lo movemos usara el elemento html de referencia, y ademas se qudara fijo en esa posicion aunque hagamos scroll.
-
+      Z-index -> Es la propiedad que nos permite ordenar los elementos superpuestos para controlar cual se coloca por delante y cual por detras.
 */
 
 *{
@@ -15,39 +13,46 @@ body{
     padding-top: 70px;
 }
 
-.header{
-    text-align: center;
-    padding: 25px 0;
-    background-color: lightskyblue;
-    color: orangered;
-    /* position: sticky;
-    top: 0; */
-    height: 200px;
-    overflow: visible;
-}
-
-.menu{
-    position: sticky;
-    top: 0;
-}
-
-article{
-    outline: 3px solid red;
-}
-
-.article-tittle{
-    position: sticky;
-    top: 0;
-    background-color: #333;
-    margin: 0;
-}
-
-.link{
-    position: fixed;
-    background-color: lightcoral;
+.container{
     width: 200px;
+    height: 200px;
+    background-color: #555;
+    /* El elemento padre nunca se colocara por delante del; hijo */
+    position: relative;
 }
 
-.img-container{
+.box{
+    width: 100px;
+    height: 100px;
     text-align: center;
+    color: #333;
+}
+
+.box-1{
+    background-color: lightcoral;
+    position: relative;
+    left: 150px;
+    z-index: -1;
+}
+
+.box-1-2{
+    background-color: aqua;
+    position: relative;
+    left: 150px;
+    top: -25px;
+    z-index: -2;
+}
+
+.box-2{
+    background-color: lightgreen;
+    position: relative;
+    top: 50px;
+    /* El numero mayor prevalece */
+    z-index: 20;
+}
+
+.box-3{
+    background-color: lightseagreen;
+    position: relative;
+    z-index: 10;
 }
