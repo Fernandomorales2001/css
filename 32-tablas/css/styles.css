@@ -1,0 +1,49 @@
+/* 
+    table-layout: Define como se comportan las dimensiones de una tabla y los anchos de las "columnas"
+        automatic: valor por defecto
+        fixed: necesita un width declarado, si no se le da un ancho a cada columna se ditribuyen equitativamente
+
+    caption-side: define donde se coloca el caption de una tabla.
+        top: valor por defecto
+        bottom: se coloca al pie de la tabla
+    
+    border-spacing: Controla el espacio entre las celdas
+        recibe una medida en cualquier unidad 
+
+    border-collapse: Controla si las celdas se mantienen juntas o separadas.
+        separate: valor por defecto
+        collapse: junta las celdas para no
+    
+    empty-cells: Controla qué hacer con las celdas vacías
+        show: valor por defecto
+        hide: oculta las celdas vacías
+*/
+
+/* .tabla{
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+} */
+
+/* .tabla{
+    caption-side: bottom;
+} */
+
+.tabla, .table_data, .table_head{
+    border: 1px solid black;
+    border-spacing: 40px;
+}
+
+.tabla{
+    width: 100%;
+    /* border-collapse: collapse;   */
+    empty-cells: hide;   
+}
+
+.table_data{
+    background-color: royalblue;
+}
+
+.table-container{
+    overflow-x: auto;
+}

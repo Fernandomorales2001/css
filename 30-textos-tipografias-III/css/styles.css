@@ -1,0 +1,26 @@
+/* 
+Sitios gratuitos para fuentes
+    https://www.dafont.com/es/
+    https://www.1001fonts.com/
+
+    Analizar fuentes web
+        whatFont
+*/
+
+
+.p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tittle{
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'miFuente', serif;
+}
+/* body{
+    font-family: 'Major Mono Display', monospace;
+} */
+
+@font-face {
+    font-family: 'miFuente';
+    src: url('assets/fonts/dark mage/Dark Mage.ttf');
+}
